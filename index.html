@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3S Support Log</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">3S Support Log</h1>
+        <form method="post" action="https://script.google.com/a/macros/std.ewubd.edu/s/AKfycbxC7VskHZC2NSU9qWa74b5NtV_ZNyAPikUwsWwuvNtxxo1BOzt7XeAqpJ43H4D8DTak/exec" id="supportLogForm" class="form">
+            <div class="form-group">
+                <label for="clientName">Client Name:</label>
+                <input type="text" id="clientName" name="clientName" required>
+            </div>
+            <div class="form-group">
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" required>
+            </div>
+            <div class="form-group">
+                <label for="supportTime">Support Time:</label>
+                <input type="text" id="supportTime" name="supportTime" required>
+            </div>
+            <div class="form-group">
+                <label for="anyDesk">AnyDesk:</label>
+                <input type="text" id="anyDesk" name="anyDesk" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumbers">Phone Numbers:</label>
+                <input type="tel" id="phoneNumbers" name="phoneNumbers" required>
+            </div>
+            <div class="form-group not-complete-reason">
+                <div class="toggle-container">
+                    <label class="toggle-label" onclick="toggleNotCompleteReason()">▼</label>
+                </div>
+                <div class="not-complete-reason-content hidden">
+                    <label for="notCompleteReason">Not Complete Reason:</label>
+                    <textarea id="notCompleteReason" name="notCompleteReason"></textarea>
+                </div>
+            </div>
+            <button type="submit" onclick="alert('Success')">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleNotCompleteReason() {
+            const notCompleteReasonContent = document.querySelector('.not-complete-reason-content');
+            notCompleteReasonContent.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>

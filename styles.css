@@ -1,0 +1,91 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #4caf50;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Add this CSS to styles.css */
+
+.not-complete-reason .toggle-container {
+    position: relative;
+}
+
+.not-complete-reason .toggle-label {
+    cursor: pointer;
+}
+
+.not-complete-reason .hidden {
+    display: none;
+}
+
+.not-complete-reason .visible {
+    display: block;
+}
+
+/* Add this CSS to styles.css */
+
+.hidden {
+    display: none;
+}
+
+.toggle-label {
+    cursor: pointer;
+}
